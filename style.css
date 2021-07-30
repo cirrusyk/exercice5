@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 98%);
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: hsl(234, 12%, 34%);
+}
+
+.wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+.title-light {
+  font-weight: 200;
+}
+
+.card-title {
+  padding-left: 50px;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.info {
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 4em;
+  font-weight: 200;
+}
+
+/* LAYOUT */
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px;
+  padding: 10px;
+}
+
+.team-builder {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+}
+
+.supervisor {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+.calc {
+  grid-column: 4 / 6;
+  grid-row: 3 / 5;
+}
+
+.karma {
+  grid-column: 2 / 4;
+  grid-row: 4 / 6;
+}
+
+.card {
+  text-align: left;
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+  height: auto;
+  box-shadow: 5px 10px 20px rgba(83, 85, 106, 0.2);
+}
+
+.info-card {
+  padding: .5em 80px 20px 50px;
+  font-weight: 200;
+  max-width: 450px;
+  line-height: 2;
+  font-weight: 200;
+}
+
+.red {
+  background: hsl(0, 78%, 62%);
+  width: auto;
+  border-style: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 5px;
+  margin-bottom: 50px;
+}
+
+.cyan {
+  background: hsl(180, 62%, 55%);
+  width: auto;
+  border-style: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 5px;
+  margin-bottom: 50px;
+}
+
+.yellow {
+  background: hsl(34, 97%, 64%);
+  width: auto;
+  border-style: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 5px;
+  margin-bottom: 50px;
+}
+
+.blue {
+  background: hsl(212, 86%, 64%);
+  width: auto;
+  border-style: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 5px;
+  margin-bottom: 50px;
+}
+
+.icon {
+  float: right;
+  width: 120px;
+  padding-right: 40px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 400px) {
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .wrapper{
+    padding: 1.5em;
+
+  }
+  .title-light {
+    margin-top: 50px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-title{
+    padding-left: 30px;
+  }
+
+  .info-card {
+    padding: 10px 10px 30px 30px;
+  }
+
+  .icon {
+    width: 110px;
+    margin-bottom: 25px;
+  }
+
+  .calc {
+    margin-bottom: 20%;
+  }
+
+}
